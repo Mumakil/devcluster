@@ -12,7 +12,7 @@ function parse_root_token() {
 
 function init_vault() {
   vault init -check
-  if [[ $! -eq 0 ]]; then
+  if [[ $? -eq 0 ]]; then
     echo "Doing nothing."
     exit 0
   fi
